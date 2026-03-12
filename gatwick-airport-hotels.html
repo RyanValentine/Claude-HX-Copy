@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gatwick Airport Hotels | Deals from Only &pound;28 | Holiday Extras</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--purple:#542E91;--purple-dark:#3D2069;--yellow:#FDDC06;--white:#FFFFFF;--off-white:#F0F0F0;--black:#232323;--grey-light:#E8E8E8;--grey-mid:#999;--violet:#925FFF}
+body{font-family:'Nunito',sans-serif;color:var(--black);background:var(--white)}
+a{text-decoration:none;color:inherit}
+.nav{background:var(--purple);padding:12px 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:36px;height:36px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--purple)}
+.logo span{color:var(--white);font-weight:700;font-size:18px}
+.nav-links{display:flex;align-items:center;gap:20px}
+.nav-links a{color:var(--white);font-size:14px}
+.nav-links a.yellow{color:var(--yellow);font-weight:600}
+.hero{background:linear-gradient(135deg,var(--purple-dark) 0%,var(--purple) 100%);padding:48px 20px 56px;color:var(--white)}
+.hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.hero-text{flex:1 1 400px}
+.hero-text .back{color:var(--yellow);font-size:13px;display:inline-block;margin-bottom:12px;opacity:0.9}
+.hero-text h1{font-size:36px;font-weight:800;margin-bottom:12px;line-height:1.2}
+.hero-text p{font-size:20px;margin-bottom:20px;opacity:0.9;font-weight:600}
+.trust-icons{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:13px;opacity:0.85}
+.trust-icons .ic{color:var(--yellow)}
+.search-box{flex:0 0 auto;background:var(--white);border-radius:12px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.12);max-width:500px;min-width:320px}
+.search-box label{font-size:12px;font-weight:700;color:var(--black);display:block;margin-bottom:4px}
+.search-box input,.search-box select{width:100%;padding:10px 12px;border:1px solid var(--grey-light);border-radius:6px;font-size:14px;font-family:'Nunito',sans-serif;margin-bottom:12px}
+.btn-yellow{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:16px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif}
+.btn-yellow:hover{filter:brightness(0.95)}
+.trust-bar{background:var(--yellow);padding:14px 20px}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-stat{text-align:center}
+.trust-stat .num{font-weight:800;font-size:20px;color:var(--purple)}
+.trust-stat .lbl{font-size:12px;color:var(--black);font-weight:600}
+.section{padding:48px 20px;max-width:1200px;margin:0 auto}
+.section h2{font-size:24px;font-weight:800;margin-bottom:8px}
+.section .sub{color:var(--grey-mid);margin-bottom:24px;font-size:14px}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);flex:1 1 280px;max-width:350px;transition:transform 0.2s}
+.card:hover{transform:translateY(-4px)}
+.card-img{height:160px;background:linear-gradient(135deg,rgba(84,46,145,0.13),rgba(146,95,255,0.13));display:flex;align-items:center;justify-content:center;font-size:48px}
+.card-body{padding:20px}
+.card-body h3{margin-bottom:6px;font-size:18px;font-weight:700}
+.card-body p{margin-bottom:12px;font-size:13px;color:var(--grey-mid);line-height:1.5}
+.card-footer{display:flex;justify-content:space-between;align-items:center}
+.card-price{font-size:20px;font-weight:800;color:var(--purple)}
+.card-rating{font-size:12px;color:var(--grey-mid)}
+.card-rating .stars{color:var(--yellow)}
+.section-grey{background:var(--off-white);padding:48px 20px}
+.section-grey-inner{max-width:800px;margin:0 auto}
+.section-grey h2{font-size:22px;font-weight:800;margin-bottom:12px}
+.section-grey p{font-size:14px;color:var(--grey-mid);line-height:1.7}
+footer{background:var(--black);color:var(--white);padding:40px 20px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-cols{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:32px}
+.footer-col{flex:1 1 160px}
+.footer-col h4{font-weight:700;font-size:14px;margin-bottom:12px;color:var(--yellow)}
+.footer-col div{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:6px;cursor:pointer}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(255,255,255,0.5)}
+.footer-links{display:flex;gap:16px}
+@media(max-width:768px){.hero-inner{flex-direction:column}.search-box{min-width:auto;width:100%}.cards{flex-direction:column;align-items:center}.card{max-width:100%}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="logo"><div class="logo-circle">HX</div><span>Holiday Extras</span></a><div class="nav-links"><a class="yellow" href="#">Support</a><a href="#">Log in</a></div></div></nav>
+<section class="hero"><div class="hero-inner"><div class="hero-text"><a href="index.html" class="back">&larr; Back to Holiday Extras</a><h1>Gatwick Airport Hotels</h1><p>Deals from only &pound;28</p><div class="trust-icons"><span><span class="ic">&#10003;</span> Free cancellation</span><span><span class="ic">&#x2b50;</span> Price match guarantee</span><span><span class="ic">&#x1f512;</span> Secure booking</span></div></div><div class="search-box"><label>Airport</label><input value="Gatwick" readonly><label>Check-in date</label><input type="date"><label>Rooms</label><select><option>1 Room</option><option>2 Rooms</option><option>3 Rooms</option></select><button class="btn-yellow">Compare hotels</button></div></div></section>
+<div class="trust-bar"><div class="trust-bar-inner"><div class="trust-stat"><div class="num">8M+</div><div class="lbl">Customers a year</div></div><div class="trust-stat"><div class="num">40+</div><div class="lbl">Years of expertise</div></div><div class="trust-stat"><div class="num">FREE</div><div class="lbl">Cancellation</div></div><div class="trust-stat"><div class="num">4.5&#9733;</div><div class="lbl">Average rating</div></div></div></div>
+<section class="section"><h2>Gatwick airport hotels</h2><p class="sub">Stay near the terminal and catch your flight stress-free</p><div class="cards"><a href="britannia-lodge-gatwick-airport-hotel.html" class="card"><div class="card-img">&#x1f31f;</div><div class="card-body"><h3>Britannia Lodge Gatwick</h3><p>3-star budget-friendly hotel just a short shuttle ride from Gatwick. Perfect for early flights.</p><div class="card-footer"><span class="card-price">From &pound;28/night</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 3.8 (1,200+)</span></div></div></a><div class="card"><div class="card-img">&#x1f3e8;</div><div class="card-body"><h3>Hilton Gatwick</h3><p>Connected to the South Terminal via a covered walkway. Premium comfort with on-site dining and bar.</p><div class="card-footer"><span class="card-price">From &pound;89/night</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.4 (3,500+)</span></div></div></div><div class="card"><div class="card-img">&#x1f6cf;&#xfe0f;</div><div class="card-body"><h3>Hampton by Hilton</h3><p>Modern rooms with complimentary breakfast. Shuttle service to both Gatwick terminals included.</p><div class="card-footer"><span class="card-price">From &pound;65/night</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.3 (2,100+)</span></div></div></div></div></section>
+<section class="section-grey"><div class="section-grey-inner"><h2>Hotel + parking packages</h2><p>Save money by bundling your airport hotel stay with parking for the duration of your trip. Our hotel and parking packages include one night's accommodation plus up to 15 days of parking, all at a discounted bundle price. It's the easiest way to start your holiday relaxed and save money at the same time.</p></div></section>
+<footer><div class="footer-inner"><div class="footer-cols"><div class="footer-col"><h4>Products</h4><div>Airport Parking</div><div>Airport Hotels</div><div>Airport Lounges</div><div>Airport Transfers</div><div>Travel Insurance</div></div><div class="footer-col"><h4>Popular Airports</h4><div>Gatwick</div><div>Heathrow</div><div>Manchester</div><div>Stansted</div><div>Luton</div></div><div class="footer-col"><h4>Help</h4><div>Support Centre</div><div>Manage Booking</div><div>Contact Us</div><div>FAQs</div></div><div class="footer-col"><h4>Company</h4><div>About Us</div><div>Careers</div><div>Press</div><div>Blog</div></div></div><div class="footer-bottom"><div>&copy; 2026 Holiday Extras Ltd. All rights reserved.</div><div class="footer-links"><span>Privacy Policy</span><span>Cookie Policy</span><span>Terms &amp; Conditions</span></div></div></div></footer>
+</body>
+</html>
