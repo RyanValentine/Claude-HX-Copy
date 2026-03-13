@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gatwick Airport Lounges | FREE WiFi, Snacks &amp; Drinks | Holiday Extras</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--purple:#542E91;--purple-dark:#3D2069;--yellow:#FDDC06;--white:#FFFFFF;--off-white:#F0F0F0;--black:#232323;--grey-light:#E8E8E8;--grey-mid:#999;--blue:#3AA6FF;--green:#00B0A6;--orange:#FFB55F;--red:#FF5F68;--violet:#925FFF}
+body{font-family:'Nunito',sans-serif;color:var(--black);background:var(--white)}
+a{text-decoration:none;color:inherit}
+.nav{background:var(--purple);padding:12px 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:36px;height:36px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--purple)}
+.logo span{color:var(--white);font-weight:700;font-size:18px}
+.nav-links{display:flex;align-items:center;gap:20px}
+.nav-links a{color:var(--white);font-size:14px}
+.nav-links a.yellow{color:var(--yellow);font-weight:600}
+.hero{background:linear-gradient(135deg,#3D2069 0%,var(--violet) 100%);padding:48px 20px 56px;color:var(--white)}
+.hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.hero-text{flex:1 1 400px}
+.hero-text .back{color:var(--yellow);font-size:13px;display:inline-block;margin-bottom:12px;opacity:0.9}
+.hero-text h1{font-size:36px;font-weight:800;margin-bottom:12px;line-height:1.2}
+.hero-text .sub{font-size:20px;margin-bottom:20px;opacity:0.9;font-weight:600}
+.hero-badges{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+.hero-badges span{font-size:13px;display:flex;align-items:center;gap:4px;opacity:0.85}
+.hero-badges .icon{color:var(--yellow)}
+.search-box{flex:0 0 auto;background:var(--white);border-radius:12px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.12);max-width:500px;width:100%}
+.search-box label{font-size:12px;font-weight:700;color:var(--black);display:block;margin-bottom:4px}
+.search-box input,.search-box select{width:100%;padding:10px 12px;border:1px solid var(--grey-light);border-radius:6px;font-size:14px;font-family:'Nunito',sans-serif;margin-bottom:12px}
+.search-box button{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:16px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;margin-top:4px}
+.trust-bar{background:var(--yellow);padding:14px 20px}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-item{text-align:center}
+.trust-item .num{font-weight:800;font-size:20px;color:var(--purple)}
+.trust-item .label{font-size:12px;color:var(--black);font-weight:600}
+.section{padding:48px 20px;max-width:1200px;margin:0 auto}
+.section h2{font-size:24px;font-weight:800;color:var(--black);margin-bottom:8px}
+.section .intro{color:var(--grey-mid);margin-bottom:24px;font-size:14px}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);flex:1 1 280px;max-width:350px}
+.card-img{height:160px;background:linear-gradient(135deg,rgba(84,46,145,0.13),rgba(146,95,255,0.13));display:flex;align-items:center;justify-content:center;font-size:48px}
+.card-body{padding:20px}
+.card-body h3{margin:0 0 6px;font-size:18px;font-weight:700;color:var(--black)}
+.card-body p{margin:0 0 12px;font-size:13px;color:var(--grey-mid);line-height:1.5}
+.card-footer{display:flex;justify-content:space-between;align-items:center}
+.card-footer .price{font-size:20px;font-weight:800;color:var(--purple)}
+.card-footer .rating{font-size:12px;color:var(--grey-mid)}
+.card-footer .stars{color:var(--yellow)}
+.section-alt{background:var(--off-white);padding:48px 20px}
+.section-alt-inner{max-width:800px;margin:0 auto}
+.section-alt-inner h2{font-size:22px;font-weight:800;color:var(--black);margin-bottom:20px}
+.faq-item{border-bottom:1px solid var(--grey-light)}
+.faq-q{padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q span{font-weight:700;font-size:15px;color:var(--black)}
+.faq-q .toggle{color:var(--purple);font-size:18px;font-weight:700}
+.faq-a{display:none;margin:0 0 16px;font-size:14px;color:var(--grey-mid);line-height:1.6}
+.faq-item.open .faq-a{display:block}
+.info-text{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:16px}
+footer{background:var(--black);color:var(--white);padding:40px 20px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-cols{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:32px}
+.footer-col{flex:1 1 160px}
+.footer-col .title{font-weight:700;font-size:14px;margin-bottom:12px;color:var(--yellow)}
+.footer-col div{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:6px;cursor:pointer}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom span{font-size:12px;color:rgba(255,255,255,0.5)}
+@media(max-width:768px){.hero-inner{flex-direction:column}.search-box{max-width:100%}.cards{flex-direction:column}.card{max-width:100%}.footer-cols{flex-direction:column}.trust-inner{gap:20px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="logo"><div class="logo-circle">HX</div><span>Holiday Extras</span></a><div class="nav-links"><a href="gatwick-airport-parking.html">Parking</a><a href="gatwick-airport-hotels.html">Hotels</a><a href="gatwick-airport-lounges.html">Lounges</a><a href="#" class="yellow">Support</a><a href="#">Log in</a></div></div></nav>
+
+<section class="hero"><div class="hero-inner"><div class="hero-text"><a href="index.html" class="back">&larr; Back to Holiday Extras</a><h1>Gatwick Airport Lounges</h1><p class="sub">FREE WiFi, snacks &amp; drinks</p><div class="hero-badges"><span><span class="icon">&check;</span> Free cancellation</span><span><span class="icon">&starf;</span> Price match guarantee</span><span><span class="icon">&#128274;</span> Secure booking</span></div></div><div class="search-box"><label>Airport</label><input type="text" placeholder="Gatwick" value="Gatwick"><label>Terminal</label><select><option>North Terminal</option><option>South Terminal</option></select><label>Date</label><input type="date"><label>Guests</label><input type="number" value="1" min="1"><button>Find lounges</button></div></div></section>
+
+<div class="trust-bar"><div class="trust-inner"><div class="trust-item"><div class="num">8M+</div><div class="label">Customers a year</div></div><div class="trust-item"><div class="num">40+</div><div class="label">Years of expertise</div></div><div class="trust-item"><div class="num">FREE</div><div class="label">Cancellation</div></div><div class="trust-item"><div class="num">4.5&#9733;</div><div class="label">Average rating</div></div></div></div>
+
+<div class="section"><h2>Gatwick airport lounges</h2><p class="intro">Enjoy complimentary drinks, snacks, and WiFi before your flight</p><div class="cards">
+<div class="card"><div class="card-img">&#129346;</div><div class="card-body"><h3>No.1 Lounge &mdash; South Terminal</h3><p>Premium lounge with dining, bar service, runway views, and complimentary spa treatments.</p><div class="card-footer"><span class="price">From &pound;32</span><span class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.5 (1,800+)</span></div></div></div>
+<div class="card"><div class="card-img">&#9749;</div><div class="card-body"><h3>My Lounge &mdash; North Terminal</h3><p>Comfortable seating with hot and cold buffet, unlimited soft drinks, and panoramic airport views.</p><div class="card-footer"><span class="price">From &pound;22</span><span class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;</span> 4.3 (2,400+)</span></div></div></div>
+<div class="card"><div class="card-img">&#127870;</div><div class="card-body"><h3>Clubrooms &mdash; South Terminal</h3><p>The ultimate premium experience with waiter service, champagne, and a full menu.</p><div class="card-footer"><span class="price">From &pound;45</span><span class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8 (960+)</span></div></div></div>
+</div></div>
+
+<div class="section-alt"><div class="section-alt-inner"><h2>Lounge FAQs</h2>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How long can I stay in the lounge?</span><span class="toggle">+</span></div><p class="faq-a">Most lounges allow you to enjoy the space for up to 3 hours before your flight. Some premium lounges offer longer stays.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Can children use the lounge?</span><span class="toggle">+</span></div><p class="faq-a">Yes, children are welcome in all Gatwick lounges. Under-2s are usually free, and there are reduced rates for children aged 2-11.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>What's included?</span><span class="toggle">+</span></div><p class="faq-a">All lounges include complimentary drinks, snacks, WiFi, and comfortable seating. Premium lounges add hot meals, bar service, and spa facilities.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Do I need to book in advance?</span><span class="toggle">+</span></div><p class="faq-a">We recommend booking in advance as lounges can fill up, especially during peak travel periods. Booking through Holiday Extras also guarantees you the best price.</p></div>
+</div></div>
+
+<div class="section"><h2>Why book a lounge with Holiday Extras?</h2><p class="info-text">Starting your holiday in an airport lounge transforms the travel experience. Instead of busy departure halls, enjoy a calm environment with complimentary refreshments, comfortable seating, and free WiFi. Whether you are travelling for business or leisure, an airport lounge is the perfect way to unwind before your flight.</p><p class="info-text">Holiday Extras offers the best prices on Gatwick airport lounges, with free cancellation and instant confirmation. We have been helping travellers enjoy better holidays for over 40 years.</p></div>
+
+<footer><div class="footer-inner"><div class="footer-cols"><div class="footer-col"><div class="title">Products</div><div>Airport Parking</div><div>Airport Hotels</div><div>Airport Lounges</div><div>Airport Transfers</div><div>Travel Insurance</div></div><div class="footer-col"><div class="title">Popular Airports</div><div>Gatwick</div><div>Heathrow</div><div>Manchester</div><div>Stansted</div><div>Luton</div></div><div class="footer-col"><div class="title">Help</div><div>Support Centre</div><div>Manage Booking</div><div>Contact Us</div><div>FAQs</div></div><div class="footer-col"><div class="title">Company</div><div>About Us</div><div>Careers</div><div>Press</div><div>Blog</div></div></div><div class="footer-bottom"><span>&copy; 2026 Holiday Extras Ltd. All rights reserved.</span><span>Privacy Policy &middot; Cookie Policy &middot; Terms &amp; Conditions</span></div></div></footer>
+</body>
+</html>
