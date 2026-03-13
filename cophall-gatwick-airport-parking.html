@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cophall Parking Gatwick | Reliable and Experienced | Holiday Extras</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--purple:#542E91;--purple-dark:#3D2069;--yellow:#FDDC06;--white:#FFFFFF;--off-white:#F0F0F0;--black:#232323;--grey-light:#E8E8E8;--grey-mid:#999;--blue:#3AA6FF;--green:#00B0A6;--orange:#FFB55F;--red:#FF5F68;--violet:#925FFF}
+body{font-family:'Nunito',sans-serif;color:var(--black);background:var(--white)}
+a{text-decoration:none;color:inherit}
+.nav{background:var(--purple);padding:12px 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:36px;height:36px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--purple)}
+.logo span{color:var(--white);font-weight:700;font-size:18px}
+.nav-links{display:flex;align-items:center;gap:20px}
+.nav-links a{color:var(--white);font-size:14px}
+.nav-links a.yellow{color:var(--yellow);font-weight:600}
+.hero{background:linear-gradient(135deg,var(--purple) 0%,#1a0d40 100%);padding:48px 20px 56px;color:var(--white)}
+.hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.hero-text{flex:1 1 400px}
+.hero-text .back{color:var(--yellow);font-size:13px;display:inline-block;margin-bottom:12px;opacity:0.9}
+.hero-text h1{font-size:36px;font-weight:800;margin-bottom:12px;line-height:1.2}
+.hero-text .sub{font-size:20px;margin-bottom:20px;opacity:0.9;font-weight:600}
+.hero-badges{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+.hero-badges span{font-size:13px;display:flex;align-items:center;gap:4px;opacity:0.85}
+.hero-badges .icon{color:var(--yellow)}
+.search-box{flex:0 0 auto;background:var(--white);border-radius:12px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.12);max-width:500px;width:100%}
+.search-box label{font-size:12px;font-weight:700;color:var(--black);display:block;margin-bottom:4px}
+.search-box input{width:100%;padding:10px 12px;border:1px solid var(--grey-light);border-radius:6px;font-size:14px;font-family:'Nunito',sans-serif;margin-bottom:12px}
+.search-box button{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:16px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;margin-top:4px}
+.trust-bar{background:var(--yellow);padding:14px 20px}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-item{text-align:center}
+.trust-item .num{font-weight:800;font-size:20px;color:var(--purple)}
+.trust-item .label{font-size:12px;color:var(--black);font-weight:600}
+.section{padding:48px 20px;max-width:1200px;margin:0 auto}
+.section h2{font-size:24px;font-weight:800;color:var(--black);margin-bottom:8px}
+.detail-wrap{display:flex;gap:32px;flex-wrap:wrap;margin-top:16px}
+.detail-text{flex:1 1 350px}
+.detail-text p{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:16px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feature{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--black)}
+.price-card{flex:0 0 280px;background:var(--white);border:2px solid var(--purple);border-radius:12px;padding:24px;text-align:center}
+.price-card .from{font-size:14px;color:var(--grey-mid);margin-bottom:4px}
+.price-card .amount{font-size:36px;font-weight:800;color:var(--purple);margin-bottom:4px}
+.price-card .per{font-size:13px;color:var(--grey-mid);margin-bottom:16px}
+.price-card .stars{display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:16px}
+.price-card .stars span:first-child{color:var(--yellow);font-size:16px}
+.price-card .stars span:last-child{font-size:13px;color:var(--grey-mid)}
+.price-card button{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:15px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif}
+.section-alt{background:var(--off-white);padding:48px 20px}
+.section-alt-inner{max-width:800px;margin:0 auto}
+.section-alt-inner h2{font-size:22px;font-weight:800;color:var(--black);margin-bottom:20px}
+.faq-item{border-bottom:1px solid var(--grey-light)}
+.faq-q{padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q span{font-weight:700;font-size:15px;color:var(--black)}
+.faq-q .toggle{color:var(--purple);font-size:18px;font-weight:700}
+.faq-a{display:none;margin:0 0 16px;font-size:14px;color:var(--grey-mid);line-height:1.6}
+.faq-item.open .faq-a{display:block}
+.info-section{padding:48px 20px;max-width:800px;margin:0 auto}
+.info-section h2{font-size:22px;font-weight:800;color:var(--black);margin-bottom:12px}
+.info-section p{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:16px}
+footer{background:var(--black);color:var(--white);padding:40px 20px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-cols{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:32px}
+.footer-col{flex:1 1 160px}
+.footer-col .title{font-weight:700;font-size:14px;margin-bottom:12px;color:var(--yellow)}
+.footer-col div{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:6px;cursor:pointer}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom span{font-size:12px;color:rgba(255,255,255,0.5)}
+@media(max-width:768px){.hero-inner{flex-direction:column}.search-box{max-width:100%}.detail-wrap{flex-direction:column}.price-card{flex:1 1 100%}.features{grid-template-columns:1fr}.footer-cols{flex-direction:column}.trust-inner{gap:20px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="logo"><div class="logo-circle">HX</div><span>Holiday Extras</span></a><div class="nav-links"><a href="gatwick-airport-parking.html">Parking</a><a href="gatwick-airport-hotels.html">Hotels</a><a href="gatwick-airport-lounges.html">Lounges</a><a href="#" class="yellow">Support</a><a href="#">Log in</a></div></div></nav>
+
+<section class="hero"><div class="hero-inner"><div class="hero-text"><a href="gatwick-airport-parking.html" class="back">&larr; Back to Gatwick Parking</a><h1>Cophall Parking Gatwick</h1><p class="sub">Reliable and experienced</p><div class="hero-badges"><span><span class="icon">&check;</span> Free cancellation</span><span><span class="icon">&starf;</span> Price match guarantee</span><span><span class="icon">&#128274;</span> Secure booking</span></div></div><div class="search-box"><label>Airport</label><input type="text" placeholder="Gatwick" value="Gatwick"><label>Drop-off date</label><input type="date"><label>Pick-up date</label><input type="date"><button>Compare parking</button></div></div></section>
+
+<div class="trust-bar"><div class="trust-inner"><div class="trust-item"><div class="num">8M+</div><div class="label">Customers a year</div></div><div class="trust-item"><div class="num">40+</div><div class="label">Years of expertise</div></div><div class="trust-item"><div class="num">FREE</div><div class="label">Cancellation</div></div><div class="trust-item"><div class="num">4.5&#9733;</div><div class="label">Average rating</div></div></div></div>
+
+<div class="section"><h2>About Cophall Farm Parking</h2><div class="detail-wrap"><div class="detail-text"><p>Cophall Farm is one of Gatwick's most established off-airport parking providers, offering secure park and ride services with regular shuttle transfers to both North and South terminals.</p><p>The car park is located just a few minutes' drive from the airport on Copthorne Road, making it a convenient and affordable choice for travellers looking for reliable Gatwick parking.</p><div class="features"><div class="feature"><span>&#128274;</span> 24hr security &amp; CCTV</div><div class="feature"><span>&#128652;</span> Free shuttle transfers</div><div class="feature"><span>&#9201;</span> 5-10 min to terminals</div><div class="feature"><span>&check;</span> Free cancellation</div><div class="feature"><span>&#127359;&#65039;</span> Tarmac car park</div><div class="feature"><span>&#128241;</span> Online booking</div></div></div><div class="price-card"><div class="from">Prices from</div><div class="amount">&pound;35</div><div class="per">per week</div><div class="stars"><span>&#9733;&#9733;&#9733;&#9733;</span><span>4.2 (3,400+ reviews)</span></div><button>Check availability</button></div></div></div>
+
+<div class="section-alt"><div class="section-alt-inner"><h2>Cophall parking FAQs</h2>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Where is Cophall Farm located?</span><span class="toggle">+</span></div><p class="faq-a">Cophall Farm is located on Copthorne Road, just a few minutes' drive from both Gatwick terminals. The car park is clearly signposted from the main road.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How often do the shuttles run?</span><span class="toggle">+</span></div><p class="faq-a">Shuttle buses depart every 10-15 minutes during peak times, with journey times of around 5-10 minutes to the terminal.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Is the car park secure?</span><span class="toggle">+</span></div><p class="faq-a">Yes. The site has 24-hour security, CCTV coverage, and perimeter fencing. Staff are on-site around the clock.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Can I book for both terminals?</span><span class="toggle">+</span></div><p class="faq-a">Absolutely. Cophall Farm serves both the North and South terminals at Gatwick. The shuttle service covers both terminals on every run.</p></div>
+</div></div>
+
+<div class="info-section"><h2>Why choose Cophall Farm?</h2><p>Cophall Farm has been providing Gatwick airport parking for many years, building a strong reputation for reliability and value. Their well-maintained site offers tarmac parking with clear markings and easy access.</p><p>With regular shuttle services running throughout the day and night, you can be confident of reaching your terminal on time. The friendly staff are available around the clock to assist with any queries, and the site benefits from comprehensive security measures including 24-hour patrols and full CCTV coverage.</p><p>Booking through Holiday Extras gives you the added benefits of free cancellation and our price match guarantee, so you can be sure you are getting the best deal.</p></div>
+
+<footer><div class="footer-inner"><div class="footer-cols"><div class="footer-col"><div class="title">Products</div><div>Airport Parking</div><div>Airport Hotels</div><div>Airport Lounges</div><div>Airport Transfers</div><div>Travel Insurance</div></div><div class="footer-col"><div class="title">Popular Airports</div><div>Gatwick</div><div>Heathrow</div><div>Manchester</div><div>Stansted</div><div>Luton</div></div><div class="footer-col"><div class="title">Help</div><div>Support Centre</div><div>Manage Booking</div><div>Contact Us</div><div>FAQs</div></div><div class="footer-col"><div class="title">Company</div><div>About Us</div><div>Careers</div><div>Press</div><div>Blog</div></div></div><div class="footer-bottom"><span>&copy; 2026 Holiday Extras Ltd. All rights reserved.</span><span>Privacy Policy &middot; Cookie Policy &middot; Terms &amp; Conditions</span></div></div></footer>
+</body>
+</html>
