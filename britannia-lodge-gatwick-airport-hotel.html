@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Britannia Lodge Gatwick | 3-Star Comfort at a Budget Price | Holiday Extras</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--purple:#542E91;--purple-dark:#3D2069;--yellow:#FDDC06;--white:#FFFFFF;--off-white:#F0F0F0;--black:#232323;--grey-light:#E8E8E8;--grey-mid:#999;--blue:#3AA6FF;--green:#00B0A6;--orange:#FFB55F;--red:#FF5F68;--violet:#925FFF}
+body{font-family:'Nunito',sans-serif;color:var(--black);background:var(--white)}
+a{text-decoration:none;color:inherit}
+.nav{background:var(--purple);padding:12px 20px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:36px;height:36px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--purple)}
+.logo span{color:var(--white);font-weight:700;font-size:18px}
+.nav-links{display:flex;align-items:center;gap:20px}
+.nav-links a{color:var(--white);font-size:14px}
+.nav-links a.yellow{color:var(--yellow);font-weight:600}
+.hero{background:linear-gradient(135deg,var(--purple-dark) 0%,var(--purple) 100%);padding:48px 20px 56px;color:var(--white)}
+.hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.hero-text{flex:1 1 400px}
+.hero-text .back{color:var(--yellow);font-size:13px;display:inline-block;margin-bottom:12px;opacity:0.9}
+.hero-text h1{font-size:36px;font-weight:800;margin-bottom:12px;line-height:1.2}
+.hero-text .sub{font-size:20px;margin-bottom:20px;opacity:0.9;font-weight:600}
+.hero-badges{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+.hero-badges span{font-size:13px;display:flex;align-items:center;gap:4px;opacity:0.85}
+.hero-badges .icon{color:var(--yellow)}
+.search-box{flex:0 0 auto;background:var(--white);border-radius:12px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.12);max-width:500px;width:100%}
+.search-box label{font-size:12px;font-weight:700;color:var(--black);display:block;margin-bottom:4px}
+.search-box input,.search-box select{width:100%;padding:10px 12px;border:1px solid var(--grey-light);border-radius:6px;font-size:14px;font-family:'Nunito',sans-serif;margin-bottom:12px}
+.search-box button{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:16px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;margin-top:4px}
+.trust-bar{background:var(--yellow);padding:14px 20px}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-item{text-align:center}
+.trust-item .num{font-weight:800;font-size:20px;color:var(--purple)}
+.trust-item .label{font-size:12px;color:var(--black);font-weight:600}
+.section{padding:48px 20px;max-width:1200px;margin:0 auto}
+.section h2{font-size:24px;font-weight:800;color:var(--black);margin-bottom:8px}
+.detail-wrap{display:flex;gap:32px;flex-wrap:wrap;margin-top:16px}
+.detail-text{flex:1 1 350px}
+.detail-text p{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:16px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feature{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--black)}
+.price-card{flex:0 0 280px;background:var(--white);border:2px solid var(--purple);border-radius:12px;padding:24px;text-align:center}
+.price-card .from{font-size:14px;color:var(--grey-mid);margin-bottom:4px}
+.price-card .amount{font-size:36px;font-weight:800;color:var(--purple);margin-bottom:4px}
+.price-card .per{font-size:13px;color:var(--grey-mid);margin-bottom:16px}
+.price-card .stars{display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:16px}
+.price-card .stars span:first-child{color:var(--yellow);font-size:16px}
+.price-card .stars span:last-child{font-size:13px;color:var(--grey-mid)}
+.price-card button{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:15px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif}
+.section-alt{background:var(--off-white);padding:48px 20px}
+.section-alt-inner{max-width:800px;margin:0 auto}
+.section-alt-inner h2{font-size:22px;font-weight:800;color:var(--black);margin-bottom:20px}
+.section-alt-inner p{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:16px}
+.faq-item{border-bottom:1px solid var(--grey-light)}
+.faq-q{padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q span{font-weight:700;font-size:15px;color:var(--black)}
+.faq-q .toggle{color:var(--purple);font-size:18px;font-weight:700}
+.faq-a{display:none;margin:0 0 16px;font-size:14px;color:var(--grey-mid);line-height:1.6}
+.faq-item.open .faq-a{display:block}
+.packages{background:var(--white);padding:48px 20px}
+.packages-inner{max-width:800px;margin:0 auto}
+.packages-inner h2{font-size:22px;font-weight:800;color:var(--black);margin-bottom:12px}
+.packages-inner p{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:16px}
+.package-cards{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
+.pkg-card{flex:1 1 220px;background:var(--off-white);border-radius:10px;padding:20px;text-align:center}
+.pkg-card .pkg-title{font-weight:700;font-size:15px;color:var(--purple);margin-bottom:8px}
+.pkg-card .pkg-desc{font-size:13px;color:var(--grey-mid);margin-bottom:12px;line-height:1.5}
+.pkg-card .pkg-price{font-size:22px;font-weight:800;color:var(--purple)}
+.pkg-card .pkg-per{font-size:12px;color:var(--grey-mid)}
+footer{background:var(--black);color:var(--white);padding:40px 20px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-cols{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:32px}
+.footer-col{flex:1 1 160px}
+.footer-col .title{font-weight:700;font-size:14px;margin-bottom:12px;color:var(--yellow)}
+.footer-col div{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:6px;cursor:pointer}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom span{font-size:12px;color:rgba(255,255,255,0.5)}
+@media(max-width:768px){.hero-inner{flex-direction:column}.search-box{max-width:100%}.detail-wrap{flex-direction:column}.price-card{flex:1 1 100%}.features{grid-template-columns:1fr}.footer-cols{flex-direction:column}.trust-inner{gap:20px}.package-cards{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="logo"><div class="logo-circle">HX</div><span>Holiday Extras</span></a><div class="nav-links"><a href="gatwick-airport-parking.html">Parking</a><a href="gatwick-airport-hotels.html">Hotels</a><a href="gatwick-airport-lounges.html">Lounges</a><a href="#" class="yellow">Support</a><a href="#">Log in</a></div></div></nav>
+
+<section class="hero"><div class="hero-inner"><div class="hero-text"><a href="gatwick-airport-hotels.html" class="back">&larr; Back to Gatwick Hotels</a><h1>Britannia Lodge Gatwick</h1><p class="sub">3-star comfort at a budget price</p><div class="hero-badges"><span><span class="icon">&check;</span> Free cancellation</span><span><span class="icon">&starf;</span> Price match guarantee</span><span><span class="icon">&#128274;</span> Secure booking</span></div></div><div class="search-box"><label>Airport</label><input type="text" placeholder="Gatwick" value="Gatwick"><label>Check-in date</label><input type="date"><label>Rooms</label><select><option>1 Room</option><option>2 Rooms</option><option>3 Rooms</option></select><button>Compare hotels</button></div></div></section>
+
+<div class="trust-bar"><div class="trust-inner"><div class="trust-item"><div class="num">8M+</div><div class="label">Customers a year</div></div><div class="trust-item"><div class="num">40+</div><div class="label">Years of expertise</div></div><div class="trust-item"><div class="num">FREE</div><div class="label">Cancellation</div></div><div class="trust-item"><div class="num">4.5&#9733;</div><div class="label">Average rating</div></div></div></div>
+
+<div class="section"><h2>About Britannia Lodge</h2><div class="detail-wrap"><div class="detail-text"><p>The Britannia Lodge is a 3-star hotel near Gatwick airport, ideal for travellers looking for affordable, comfortable accommodation before an early flight. The hotel offers shuttle transfers to both terminals and is a popular choice for budget-conscious holidaymakers.</p><p>Rooms are clean, comfortable, and well-equipped with en-suite bathrooms, complimentary WiFi, and tea and coffee making facilities. The friendly reception team is available around the clock to help with any queries.</p><div class="features"><div class="feature"><span>&#128716;</span> Comfortable rooms</div><div class="feature"><span>&#128652;</span> Shuttle to terminals</div><div class="feature"><span>&#128246;</span> Free WiFi</div><div class="feature"><span>&#127359;&#65039;</span> Parking available</div><div class="feature"><span>&#9749;</span> Breakfast options</div><div class="feature"><span>&check;</span> Free cancellation</div></div></div><div class="price-card"><div class="from">Prices from</div><div class="amount">&pound;28</div><div class="per">per night</div><div class="stars"><span>&#9733;&#9733;&#9733;&#9733;</span><span>3.8 (1,200+ reviews)</span></div><button>Check availability</button></div></div></div>
+
+<div class="section-alt"><div class="section-alt-inner"><h2>Hotel + parking packages</h2><p>Make the most of your stay by adding parking. Our hotel and parking packages at Britannia Lodge include one night's accommodation plus up to 15 days of secure parking, saving you money compared to booking separately.</p><p>It is the easiest way to start your holiday relaxed while keeping costs down. Simply select the hotel and parking option when you search, and we will show you the best bundle deals available for your dates.</p>
+<div class="package-cards"><div class="pkg-card"><div class="pkg-title">Room Only</div><div class="pkg-desc">Comfortable overnight stay with shuttle to both Gatwick terminals</div><div class="pkg-price">&pound;28</div><div class="pkg-per">per night</div></div><div class="pkg-card"><div class="pkg-title">Room + 8 Days Parking</div><div class="pkg-desc">One night stay plus 8 days of secure off-airport parking included</div><div class="pkg-price">&pound;62</div><div class="pkg-per">total package</div></div><div class="pkg-card"><div class="pkg-title">Room + 15 Days Parking</div><div class="pkg-desc">One night stay plus 15 days of parking for longer holidays</div><div class="pkg-price">&pound;79</div><div class="pkg-per">total package</div></div></div>
+</div></div>
+
+<div class="packages"><div class="packages-inner"><h2>Britannia Lodge FAQs</h2>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How far is the hotel from Gatwick airport?</span><span class="toggle">+</span></div><p class="faq-a">The Britannia Lodge is a short shuttle ride from both Gatwick terminals. The shuttle runs regularly and journey times are approximately 10 minutes.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Is parking included?</span><span class="toggle">+</span></div><p class="faq-a">Parking is available as an add-on. You can book a room-only stay or choose one of our hotel and parking packages which include up to 15 days of secure parking.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Is breakfast available?</span><span class="toggle">+</span></div><p class="faq-a">Yes, breakfast is available at the hotel. You can choose to add breakfast when you book, or purchase it on the morning of your stay at reception.</p></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>What time can I check in and check out?</span><span class="toggle">+</span></div><p class="faq-a">Check-in is available from 2pm onwards. Check-out is by 10am. If you have an early flight, the shuttle service starts running from early morning to get you to the terminal on time.</p></div>
+</div></div>
+
+<footer><div class="footer-inner"><div class="footer-cols"><div class="footer-col"><div class="title">Products</div><div>Airport Parking</div><div>Airport Hotels</div><div>Airport Lounges</div><div>Airport Transfers</div><div>Travel Insurance</div></div><div class="footer-col"><div class="title">Popular Airports</div><div>Gatwick</div><div>Heathrow</div><div>Manchester</div><div>Stansted</div><div>Luton</div></div><div class="footer-col"><div class="title">Help</div><div>Support Centre</div><div>Manage Booking</div><div>Contact Us</div><div>FAQs</div></div><div class="footer-col"><div class="title">Company</div><div>About Us</div><div>Careers</div><div>Press</div><div>Blog</div></div></div><div class="footer-bottom"><span>&copy; 2026 Holiday Extras Ltd. All rights reserved.</span><span>Privacy Policy &middot; Cookie Policy &middot; Terms &amp; Conditions</span></div></div></footer>
+</body>
+</html>
