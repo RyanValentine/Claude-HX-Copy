@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gatwick Airport Parking | Compare Deals &amp; Cancel FREE | Holiday Extras</title>
+<title>Gatwick Airport Parking | Compare Deals from &pound;4.24/day | Holiday Extras</title>
+<meta name="description" content="Compare cheap Gatwick airport parking from &pound;4.24/day. Park &amp; Ride and Meet &amp; Greet options at both terminals. Free cancellation, price match guarantee. Book with Holiday Extras and save up to 75%.">
+<link rel="canonical" href="https://claude-hx-copy.vercel.app/gatwick-airport-parking.html">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--purple:#542E91;--purple-dark:#3D2069;--yellow:#FDDC06;--white:#FFFFFF;--off-white:#F0F0F0;--black:#232323;--grey-light:#E8E8E8;--grey-mid:#999;--violet:#925FFF}
+:root{--purple:#542E91;--purple-dark:#3D2069;--yellow:#FDDC06;--white:#FFFFFF;--off-white:#F0F0F0;--black:#232323;--grey-light:#E8E8E8;--grey-mid:#999;--violet:#925FFF;--green:#2ECC71}
 body{font-family:'Nunito',sans-serif;color:var(--black);background:var(--white)}
 a{text-decoration:none;color:inherit}
 .nav{background:var(--purple);padding:12px 20px}
@@ -23,12 +25,14 @@ a{text-decoration:none;color:inherit}
 .hero-text{flex:1 1 400px}
 .hero-text .back{color:var(--yellow);font-size:13px;display:inline-block;margin-bottom:12px;opacity:0.9}
 .hero-text h1{font-size:36px;font-weight:800;margin-bottom:12px;line-height:1.2}
-.hero-text p{font-size:20px;margin-bottom:20px;opacity:0.9;font-weight:600}
+.hero-text p.sub{font-size:20px;margin-bottom:20px;opacity:0.9;font-weight:600}
 .trust-icons{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:13px;opacity:0.85}
 .trust-icons .ic{color:var(--yellow)}
 .search-box{flex:0 0 auto;background:var(--white);border-radius:12px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.12);max-width:500px;min-width:320px}
 .search-box label{font-size:12px;font-weight:700;color:var(--black);display:block;margin-bottom:4px}
-.search-box input,.search-box select{width:100%;padding:10px 12px;border:1px solid var(--grey-light);border-radius:6px;font-size:14px;font-family:'Nunito',sans-serif;margin-bottom:12px}
+.search-box input,.search-box select{width:100%;padding:10px 12px;border:1px solid var(--grey-light);border-radius:6px;font-size:14px;font-family:'Nunito',sans-serif;margin-bottom:12px;cursor:pointer;appearance:none;-webkit-appearance:none}
+.search-box input[type="date"]{position:relative}
+.search-box input[type="date"]::-webkit-calendar-picker-indicator{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;opacity:0;cursor:pointer}
 .btn-yellow{width:100%;padding:12px;background:var(--yellow);color:var(--black);border:none;border-radius:6px;font-size:16px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif}
 .btn-yellow:hover{filter:brightness(0.95)}
 .trust-bar{background:var(--yellow);padding:14px 20px}
@@ -51,10 +55,60 @@ a{text-decoration:none;color:inherit}
 .card-price{font-size:20px;font-weight:800;color:var(--purple)}
 .card-rating{font-size:12px;color:var(--grey-mid)}
 .card-rating .stars{color:var(--yellow)}
+.intro{padding:48px 20px;max-width:900px;margin:0 auto}
+.intro h2{font-size:26px;font-weight:800;margin-bottom:16px;color:var(--purple)}
+.intro p{font-size:15px;color:#555;line-height:1.8;margin-bottom:16px}
+.intro strong{color:var(--black)}
+.compare{padding:48px 20px;background:var(--off-white)}
+.compare-inner{max-width:1000px;margin:0 auto}
+.compare-inner h2{font-size:24px;font-weight:800;margin-bottom:8px}
+.compare-inner .sub{color:var(--grey-mid);margin-bottom:24px;font-size:14px}
+.compare-cols{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.compare-col{flex:1 1 300px;background:var(--white);border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.compare-col h3{font-size:20px;font-weight:800;margin-bottom:4px}
+.compare-col .price-tag{font-size:14px;color:var(--purple);font-weight:700;margin-bottom:16px}
+.compare-col ul{list-style:none;padding:0}
+.compare-col ul li{font-size:14px;color:#555;padding:8px 0;border-bottom:1px solid var(--grey-light);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+.compare-col ul li:last-child{border:none}
+.compare-col ul li .tick{color:var(--green);font-weight:700;flex-shrink:0}
+.price-table{width:100%;border-collapse:collapse;margin-top:16px;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.price-table th{background:var(--purple);color:var(--white);padding:12px 16px;text-align:left;font-size:13px;font-weight:700}
+.price-table td{padding:12px 16px;font-size:13px;border-bottom:1px solid var(--grey-light)}
+.price-table tr:last-child td{border:none}
+.price-table tr:hover td{background:rgba(84,46,145,0.03)}
+.terminal{padding:48px 20px;max-width:900px;margin:0 auto}
+.terminal h2{font-size:24px;font-weight:800;margin-bottom:16px}
+.terminal p{font-size:15px;color:#555;line-height:1.8;margin-bottom:16px}
+.terminal-grid{display:flex;gap:24px;flex-wrap:wrap;margin:24px 0}
+.terminal-box{flex:1 1 280px;background:var(--white);border-radius:12px;padding:24px;border:2px solid var(--grey-light)}
+.terminal-box h3{font-size:18px;font-weight:800;margin-bottom:8px;color:var(--purple)}
+.terminal-box p{font-size:13px;color:#555;line-height:1.6;margin-bottom:8px}
+.terminal-box .airlines{font-size:12px;color:var(--grey-mid);line-height:1.5}
+.faq-section{padding:48px 20px;background:var(--off-white)}
+.faq-inner{max-width:800px;margin:0 auto}
+.faq-inner h2{font-size:24px;font-weight:800;margin-bottom:24px}
+.faq-item{border-bottom:1px solid var(--grey-light);background:var(--white);margin-bottom:2px;border-radius:8px;overflow:hidden}
+.faq-q{padding:16px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q span{font-weight:700;font-size:15px;color:var(--black)}
+.faq-q .toggle{color:var(--purple);font-size:18px;font-weight:700;transition:transform 0.2s}
+.faq-a{display:none;padding:0 20px 16px;font-size:14px;color:#555;line-height:1.7}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .toggle{transform:rotate(45deg)}
+.why-section{padding:48px 20px;max-width:900px;margin:0 auto}
+.why-section h2{font-size:24px;font-weight:800;margin-bottom:24px}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.why-card{text-align:center;padding:24px 16px}
+.why-card .icon{font-size:32px;margin-bottom:12px}
+.why-card h4{font-size:15px;font-weight:800;margin-bottom:6px}
+.why-card p{font-size:13px;color:var(--grey-mid);line-height:1.5}
+.cta-banner{background:linear-gradient(135deg,var(--purple-dark),var(--purple));padding:40px 20px;text-align:center;color:var(--white)}
+.cta-banner h2{font-size:26px;font-weight:800;margin-bottom:12px}
+.cta-banner p{font-size:16px;opacity:0.9;margin-bottom:20px;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-banner a{display:inline-block;padding:14px 40px;background:var(--yellow);color:var(--black);border-radius:6px;font-weight:800;font-size:16px}
 .section-grey{background:var(--off-white);padding:48px 20px}
 .section-grey-inner{max-width:800px;margin:0 auto}
 .section-grey h2{font-size:22px;font-weight:800;margin-bottom:12px}
-.section-grey p{font-size:14px;color:var(--grey-mid);line-height:1.7}
+.section-grey p{font-size:14px;color:var(--grey-mid);line-height:1.7;margin-bottom:12px}
 footer{background:var(--black);color:var(--white);padding:40px 20px}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-cols{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:32px}
@@ -63,20 +117,62 @@ footer{background:var(--black);color:var(--white);padding:40px 20px}
 .footer-col div{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:6px;cursor:pointer}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(255,255,255,0.5)}
 .footer-links{display:flex;gap:16px}
-@media(max-width:768px){.hero-inner{flex-direction:column}.search-box{min-width:auto;width:100%}.cards{flex-direction:column;align-items:center}.card{max-width:100%}}
+@media(max-width:768px){.hero-inner{flex-direction:column}.search-box{min-width:auto;width:100%}.cards{flex-direction:column;align-items:center}.card{max-width:100%}.compare-cols{flex-direction:column}.terminal-grid{flex-direction:column}.price-table{font-size:12px}.price-table td,.price-table th{padding:8px 10px}}
 </style>
 </head>
 <body>
 
 <nav class="nav"><div class="nav-inner"><a href="index.html" class="logo"><div class="logo-circle">HX</div><span>Holiday Extras</span></a><div class="nav-links"><a href="gatwick-airport-parking.html">Parking</a><a href="gatwick-airport-hotels.html">Hotels</a><a href="gatwick-airport-lounges.html">Lounges</a><a href="#" class="yellow">Support</a><a href="#">Log in</a></div></div></nav>
 
-<section class="hero"><div class="hero-inner"><div class="hero-text"><a href="index.html" class="back">&larr; Back to Holiday Extras</a><h1>Gatwick Airport Parking</h1><p>Compare deals from only &pound;35/week</p><div class="trust-icons"><span><span class="ic">&#10003;</span> Free cancellation</span><span><span class="ic">&#x2b50;</span> Price match guarantee</span><span><span class="ic">&#x1f512;</span> Secure booking</span></div></div><div class="search-box"><label>Airport</label><input value="Gatwick" readonly><label>Drop-off date</label><input type="date"><label>Pick-up date</label><input type="date"><button class="btn-yellow">Compare parking</button></div></div></section>
+<section class="hero"><div class="hero-inner"><div class="hero-text"><a href="index.html" class="back">&larr; Back to Holiday Extras</a><h1>Gatwick Airport Parking</h1><p class="sub">Compare deals from only &pound;4.24/day &mdash; save up to 75%</p><div class="trust-icons"><span><span class="ic">&#10003;</span> Free cancellation</span><span><span class="ic">&#x2b50;</span> Never beaten on price</span><span><span class="ic">&#x1f512;</span> Airport-approved car parks</span></div></div><div class="search-box"><label>Airport</label><input value="Gatwick" readonly><label>Drop-off date</label><input type="date" id="dropoff"><label>Pick-up date</label><input type="date" id="pickup"><button class="btn-yellow">Compare parking</button></div></div></section>
 
-<div class="trust-bar"><div class="trust-bar-inner"><div class="trust-stat"><div class="num">8M+</div><div class="lbl">Customers a year</div></div><div class="trust-stat"><div class="num">40+</div><div class="lbl">Years of expertise</div></div><div class="trust-stat"><div class="num">FREE</div><div class="lbl">Cancellation</div></div><div class="trust-stat"><div class="num">4.5&#9733;</div><div class="lbl">Average rating</div></div></div></div>
+<div class="trust-bar"><div class="trust-bar-inner"><div class="trust-stat"><div class="num">8M+</div><div class="lbl">Customers a year</div></div><div class="trust-stat"><div class="num">40+</div><div class="lbl">Years of expertise</div></div><div class="trust-stat"><div class="num">FREE</div><div class="lbl">Cancellation</div></div><div class="trust-stat"><div class="num">4.8&#9733;</div><div class="lbl">Gatwick parking rating</div></div></div></div>
 
-<section class="section"><h2>Gatwick airport parking</h2><p class="sub">Secure, affordable parking with free cancellation at the UK's second busiest airport</p><div class="cards"><a href="cophall-gatwick-airport-parking.html" class="card"><div class="card-img"><img src="https://hximagecloud.imgix.net/holidayextras.co.uk/seo-images/gatwick-parking/cophall-gatwick-airport.png" alt="Cophall Farm Parking at Gatwick Airport"></div><div class="card-body"><h3>Cophall Farm Parking</h3><p>One of Gatwick's most established off-airport car parks. Secure park and ride with regular shuttle transfers to both terminals.</p><div class="card-footer"><span class="card-price">From &pound;35/week</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.2 (3,400+)</span></div></div></a><div class="card"><div class="card-img"><img src="https://hximagecloud.imgix.net/seo-system/www.holidayextras.com/gatwick-airport-parking/LGW-parking-holiday-extras-rating.png" alt="Gatwick Airport Official Valet Parking"></div><div class="card-body"><h3>Gatwick Official Valet</h3><p>Drop your car at the terminal and let the professionals park it for you. The ultimate convenience for stress-free travel.</p><div class="card-footer"><span class="card-price">From &pound;79/week</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.5 (5,200+)</span></div></div></div><div class="card"><div class="card-img"><img src="https://hximagecloud.imgix.net/holidayextras.co.uk/seo-images/gatwick-parking/gatwick-airport-parking-purple-parking.png" alt="Purple Parking Park and Ride at Gatwick Airport"></div><div class="card-body"><h3>Purple Parking Park &amp; Ride</h3><p>Budget-friendly off-airport parking with free shuttle buses running every 10-15 minutes to both Gatwick terminals.</p><div class="card-footer"><span class="card-price">From &pound;40/week</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.0 (8,100+)</span></div></div></div></div></section>
+<!-- Intro section for SEO -->
+<div class="intro"><h2>Compare and book the best Gatwick parking deals</h2><p>Whether you are heading off on a family holiday or a business trip, booking your Gatwick airport parking in advance is one of the smartest moves you can make. Pre-booking through Holiday Extras can <strong>save you up to 75%</strong> compared with drive-up prices, and you will guarantee yourself a space even during the busiest school holidays and bank holiday weekends.</p><p>We only sell <strong>airport-approved, fully secured car parks</strong> at Gatwick &mdash; every site features CCTV, floodlighting, perimeter fencing and regular patrols. With over 40 years of experience and 8 million customers a year, Holiday Extras makes it easy to compare Park &amp; Ride and Meet &amp; Greet options at both the North and South terminals, all backed by free cancellation and our Never Beaten on Price guarantee.</p></div>
 
-<section class="section-grey"><div class="section-grey-inner"><h2>Gatwick parking tips</h2><p>Booking your Gatwick airport parking in advance can save you up to 60% compared with drive-up prices. Pre-booking also guarantees your space during busy holiday periods, so you can start your trip stress-free. Whether you prefer the convenience of meet and greet or the value of park and ride, Holiday Extras compares all the best options so you get the right parking at the right price.</p></div></section>
+<!-- Product cards -->
+<section class="section"><h2>Gatwick parking &mdash; our top picks</h2><p class="sub">Airport-approved car parks with free cancellation. Sorted by price.</p><div class="cards"><a href="cophall-gatwick-airport-parking.html" class="card"><div class="card-img"><img src="https://hximagecloud.imgix.net/holidayextras.co.uk/seo-images/gatwick-parking/cophall-gatwick-airport.png" alt="Cophall Farm Parking at Gatwick Airport" loading="lazy"></div><div class="card-body"><h3>Cophall Farm Park &amp; Ride</h3><p>Established off-airport car park with secure parking and regular free shuttle buses to both Gatwick terminals. 15-minute transfer.</p><div class="card-footer"><span class="card-price">From &pound;4.36/day</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.5</span></div></div></a><div class="card"><div class="card-img"><img src="https://hximagecloud.imgix.net/seo-system/www.holidayextras.com/gatwick-airport-parking/LGW-parking-holiday-extras-rating.png" alt="Gatwick Airport Parking rated 4.8 by Holiday Extras customers" loading="lazy"></div><div class="card-body"><h3>Purple Parking Park &amp; Ride</h3><p>Our best-selling Gatwick car park. 10-minute shuttle transfers to both terminals, 24/7 operation, CCTV and regular security patrols.</p><div class="card-footer"><span class="card-price">From &pound;4.24/day</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.2</span></div></div></div><div class="card"><div class="card-img"><img src="https://hximagecloud.imgix.net/holidayextras.co.uk/seo-images/gatwick-parking/gatwick-airport-parking-purple-parking.png" alt="Purple Parking Meet and Greet at Gatwick Airport" loading="lazy"></div><div class="card-body"><h3>I Love Meet &amp; Greet</h3><p>Hand your keys to a professional driver at the terminal. Your car is parked securely off-site and returned when you land. Walk straight to check-in.</p><div class="card-footer"><span class="card-price">From &pound;5.43/day</span><span class="card-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.6</span></div></div></div></div></section>
+
+<!-- Meet & Greet vs Park & Ride comparison -->
+<div class="compare"><div class="compare-inner"><h2>Meet &amp; Greet vs Park &amp; Ride at Gatwick</h2><p class="sub">Not sure which type suits you? Here is how they compare.</p><div class="compare-cols"><div class="compare-col"><h3>&#128664; Meet &amp; Greet</h3><p class="price-tag">From &pound;6.25/day</p><ul><li><span class="tick">&#10003;</span> Drop your car at the terminal forecourt</li><li><span class="tick">&#10003;</span> No shuttle bus &mdash; just a short walk to check-in</li><li><span class="tick">&#10003;</span> Hand keys to a professional, insured driver</li><li><span class="tick">&#10003;</span> Car stored in a secure off-site compound</li><li><span class="tick">&#10003;</span> Ideal for families, heavy luggage or reduced mobility</li><li><span class="tick">&#10003;</span> Car returned to the terminal on your arrival</li></ul></div><div class="compare-col"><h3>&#128652; Park &amp; Ride</h3><p class="price-tag">From &pound;4.24/day</p><ul><li><span class="tick">&#10003;</span> Park your car yourself in a secured compound</li><li><span class="tick">&#10003;</span> Free shuttle to the terminal every 10&ndash;15 minutes</li><li><span class="tick">&#10003;</span> You usually keep your keys</li><li><span class="tick">&#10003;</span> CCTV, fencing, floodlighting and 24/7 patrols</li><li><span class="tick">&#10003;</span> Cheapest option &mdash; great for budget-conscious travellers</li><li><span class="tick">&#10003;</span> Shuttles serve both North and South terminals</li></ul></div></div>
+
+<!-- Price comparison table -->
+<h2>Gatwick parking prices at a glance</h2><p class="sub">Pre-booked 8-day prices via Holiday Extras. Prices vary by date and availability.</p><table class="price-table"><thead><tr><th>Car park</th><th>Type</th><th>Transfer</th><th>From (8 days)</th><th>Rating</th></tr></thead><tbody><tr><td><strong>Purple Parking</strong></td><td>Park &amp; Ride</td><td>10 mins</td><td>&pound;33.29</td><td>&#9733; 4.2</td></tr><tr><td><strong>Cophall Parking</strong></td><td>Park &amp; Ride</td><td>15 mins</td><td>&pound;34.95</td><td>&#9733; 4.5</td></tr><tr><td><strong>APH Park &amp; Ride</strong></td><td>Park &amp; Ride</td><td>10&ndash;12 mins</td><td>&pound;36.73</td><td>&#9733; 4.4</td></tr><tr><td><strong>I Love Meet &amp; Greet</strong></td><td>Meet &amp; Greet</td><td>2&ndash;5 min walk</td><td>&pound;53.00</td><td>&#9733; 4.6</td></tr><tr><td><strong>ACE Meet &amp; Greet</strong></td><td>Meet &amp; Greet</td><td>2&ndash;5 min walk</td><td>&pound;50.96</td><td>&#9733; 4.3</td></tr><tr><td><strong>Meteor Meet &amp; Greet</strong></td><td>Meet &amp; Greet</td><td>2&ndash;5 min walk</td><td>&pound;52.96</td><td>&#9733; 4.4</td></tr></tbody></table></div></div>
+
+<!-- Terminal guidance -->
+<div class="terminal"><h2>Parking by terminal &mdash; North &amp; South</h2><p>Gatwick has two terminals linked by a free monorail that runs every 3&ndash;4 minutes, so whichever car park you choose you can reach either terminal easily. That said, knowing your terminal in advance helps you plan your journey.</p><div class="terminal-grid"><div class="terminal-box"><h3>North Terminal</h3><p>Serves easyJet, Turkish Airlines, Norse Atlantic and others. Our top pick for North is <strong>Purple Parking</strong> (Park &amp; Ride, 10-min transfer) or <strong>Maple Manor Premium</strong> for Meet &amp; Greet, with covered walkway access in under 5 minutes.</p><p class="airlines"><strong>Airlines:</strong> easyJet, Turkish Airlines, Norse Atlantic, Wizz Air, WestJet, Vietnam Airlines</p></div><div class="terminal-box"><h3>South Terminal</h3><p>Serves British Airways, Vueling, Ryanair, TUI, Jet2 and others. Our top pick for South is <strong>Cophall Parking</strong> (Park &amp; Ride, great value) or <strong>I Love Meet &amp; Greet</strong> for the ultimate convenience &mdash; over 30 years of experience.</p><p class="airlines"><strong>Airlines:</strong> British Airways, Vueling, Ryanair, TUI, Jet2, EasyJet (some routes), Wizz Air</p></div></div><p>All of our Park &amp; Ride and Meet &amp; Greet options serve both terminals. A free monorail connects North and South in around 2 minutes if you need to switch.</p></div>
+
+<!-- Why book with us -->
+<div class="why-section"><h2>Why book Gatwick parking with Holiday Extras?</h2><div class="why-grid"><div class="why-card"><div class="icon">&#128176;</div><h4>Save up to 75%</h4><p>Pre-booking through us is dramatically cheaper than driving up and paying on the day.</p></div><div class="why-card"><div class="icon">&#128274;</div><h4>Airport-approved only</h4><p>Every car park we sell is vetted, secured with CCTV, fencing and patrols, and approved by the airport.</p></div><div class="why-card"><div class="icon">&#10060;</div><h4>Free cancellation</h4><p>Plans change. With Flextras you can amend or cancel your booking for free, right up to the day before.</p></div><div class="why-card"><div class="icon">&#127942;</div><h4>Never beaten on price</h4><p>Find the same product cheaper within 24 hours and we will match it. Guaranteed.</p></div></div></div>
+
+<!-- FAQs for SEO -->
+<div class="faq-section"><div class="faq-inner"><h2>Gatwick airport parking &mdash; frequently asked questions</h2>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How much does Gatwick airport parking cost?</span><span class="toggle">+</span></div><div class="faq-a">Prices depend on the type of parking and how far in advance you book. With Holiday Extras, Park &amp; Ride starts from around &pound;4.24 per day when pre-booked, while Meet &amp; Greet starts from about &pound;6.25 per day. Booking in advance typically saves 50&ndash;75% compared with turning up on the day. Official on-airport Short Stay parking costs significantly more &mdash; from &pound;13 for one to two hours.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Is it cheaper to book Gatwick parking in advance?</span><span class="toggle">+</span></div><div class="faq-a">Yes, substantially. For example, a week of Park &amp; Ride parking at Purple Parking costs around &pound;82 if you turn up on the day, but as little as &pound;33 when you pre-book through Holiday Extras &mdash; a saving of nearly &pound;50. The earlier you book, the more you save. We recommend booking at least 4&ndash;6 weeks ahead for the best deals.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Can I park for free at Gatwick Airport?</span><span class="toggle">+</span></div><div class="faq-a">There is no free long-term parking at Gatwick. However, the Long Stay car parks offer the first 2 hours free, which is useful if you are picking up or dropping off passengers. The designated terminal drop-off zones charge a minimum of &pound;10 for up to 10 minutes. For the cheapest extended parking, pre-booked Park &amp; Ride through Holiday Extras offers the best value from just &pound;4.24 per day.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>What is the difference between Meet &amp; Greet and Park &amp; Ride?</span><span class="toggle">+</span></div><div class="faq-a">With <strong>Meet &amp; Greet</strong>, you drive directly to the terminal, hand your keys to a professional driver, and walk straight to check-in. Your car is parked in a secure compound and returned to the terminal when you land. With <strong>Park &amp; Ride</strong>, you drive to a secured off-airport car park, park your own car, and take a free shuttle bus to the terminal (typically 10&ndash;15 minutes). Park &amp; Ride is cheaper; Meet &amp; Greet is more convenient.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How much is it to park at Gatwick for 7 days?</span><span class="toggle">+</span></div><div class="faq-a">A week of pre-booked parking at Gatwick starts from around &pound;33 for Park &amp; Ride and from around &pound;50 for Meet &amp; Greet when booked through Holiday Extras. Without pre-booking, a week in the official Long Stay car park costs around &pound;56, and Short Stay costs considerably more. Pre-booking is always the best-value option.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Do I have to pre-book parking at Gatwick?</span><span class="toggle">+</span></div><div class="faq-a">You do not have to, but it is strongly recommended. Pre-booking guarantees your space (especially important during peak periods), and prices are dramatically lower. Holiday Extras car parks can fill up at busy times, and turning up without a booking means paying the much higher drive-up rate.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>How early should I arrive at the car park?</span><span class="toggle">+</span></div><div class="faq-a">For Park &amp; Ride, allow your normal airline check-in time plus 20&ndash;30 minutes to cover parking and the shuttle transfer. For Meet &amp; Greet, simply arrive at the terminal at your booked drop-off time &mdash; the whole process takes just a few minutes. Shuttles run 24 hours a day, so even very early or late flights are covered.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Are the car parks secure?</span><span class="toggle">+</span></div><div class="faq-a">Yes. All car parks sold through Holiday Extras are airport-approved and feature robust security measures including 24-hour CCTV, floodlighting, perimeter fencing, entry/exit barriers and regular security patrols. Many also carry the Park Mark Award, a police-backed standard for safer parking.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Can I cancel or change my booking?</span><span class="toggle">+</span></div><div class="faq-a">Yes. With Holiday Extras Flextras, you can amend or cancel your booking for free right up to the day before your parking period starts. This gives you complete flexibility if your travel plans change.</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span>Does Gatwick have electric vehicle charging?</span><span class="toggle">+</span></div><div class="faq-a">Yes. EV charging is available at Gatwick Short Stay car parks (22kW chargers), through the GRIDSERVE Electric Forecourt on the South Terminal ring road (150&ndash;350kW rapid chargers), and at selected off-airport providers such as APH Park &amp; Ride, which offers 30&ndash;60kW charging during your stay. You can also pre-book EV charging with valet parking.</div></div>
+
+</div></div>
+
+<!-- CTA banner -->
+<div class="cta-banner"><h2>Ready to book your Gatwick parking?</h2><p>Compare deals, book in seconds, and cancel for free if your plans change. It really is that easy.</p><a href="#top">Compare parking now</a></div>
 
 <footer><div class="footer-inner"><div class="footer-cols"><div class="footer-col"><h4>Products</h4><div>Airport Parking</div><div>Airport Hotels</div><div>Airport Lounges</div><div>Airport Transfers</div><div>Travel Insurance</div></div><div class="footer-col"><h4>Popular Airports</h4><div>Gatwick</div><div>Heathrow</div><div>Manchester</div><div>Stansted</div><div>Luton</div></div><div class="footer-col"><h4>Help</h4><div>Support Centre</div><div>Manage Booking</div><div>Contact Us</div><div>FAQs</div></div><div class="footer-col"><h4>Company</h4><div>About Us</div><div>Careers</div><div>Press</div><div>Blog</div></div></div><div class="footer-bottom"><div>&copy; 2026 Holiday Extras Ltd. All rights reserved.</div><div class="footer-links"><span>Privacy Policy</span><span>Cookie Policy</span><span>Terms &amp; Conditions</span></div></div></div></footer>
 
